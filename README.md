@@ -6,7 +6,7 @@ module-federation-override 是一个浏览器工具，在使用 MF 开发微前�
 // Make sure to put this BEFORE any <script type="overridable-modulemap"> elements
 <script
   type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/module-federation-overrides@1.0.0/dist/index.js"
+  src="https://cdn.jsdelivr.net/npm/module-federation-overrides@1.2.0/dist/index.js"
 ></script>
 // The full UI, including the "trigger" button that pops up the UI.
 <module-federation-overrides-full></module-federation-overrides-full>
