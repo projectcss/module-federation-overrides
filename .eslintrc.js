@@ -1,8 +1,3 @@
-/**
- * @file 符合百度规范的eslint配置
- * @author FranckChen(chenfna02@baidu.com)
- */
-
 const path = require('path');
 
 module.exports = {

@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "target": "ES2015",
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+
+        "jsx": "react",
+
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUncheckedIndexedAccess": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+
+        "experimentalDecorators": true,
+        "useDefineForClassFields": true,
+        "importHelpers": true,
+        "downlevelIteration": true,
+        "isolatedModules": true
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
+}

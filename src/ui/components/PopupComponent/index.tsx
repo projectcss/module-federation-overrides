@@ -18,7 +18,7 @@ export const PopupComponent = (props: IProps) => {
                         maps. Start by clicking on a module that you'd like to override.{" "}
                         <a
                             target="_blank"
-                            href="https://www.npmjs.com/package/module-map-overrides"
+                            href="https://www.npmjs.com/package/module-federation-overrides"
                         >
                             See documentation for more info
                         </a>

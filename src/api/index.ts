@@ -2,9 +2,9 @@ import {includes} from "../utils/includes";
 import {ICustomEventType, IModuleMap, IScriptModuleInfo} from "./type";
 
 export const moduleMapType = 'overridable-modulemap';
-export const localStoragePrefix = "module-map-override:";
+export const localStoragePrefix = "module-federation-override:";
 export const portRegex = /^\d+$/g;
-export const disabledOverridesLocalStorageKey = "module-map-overrides-disabled";
+export const disabledOverridesLocalStorageKey = "module-federation-overrides-disabled";
 export const overrideAttribute = "data-is-modulemap-override";
 // 最后一个module import script标签
 let referenceNode: HTMLScriptElement | undefined;
@@ -55,7 +55,7 @@ export const fireEvent = (type: ICustomEventType) => {
     // Set timeout so that event fires after the change has totally finished
     const canFireCustomEvents = getIsCanFireCustomEvents();
     setTimeout(() => {
-        const eventType = `module-map-overrides:${type}`;
+        const eventType = `module-federation-overrides:${type}`;
         const event = canFireCustomEvents
             ? new CustomEvent(eventType)
             : document.createEvent(eventType);
@@ -222,7 +222,7 @@ const init = () => {
 
     if (referenceNode && referenceNode.src) {
         throw Error(
-            `module-map-overrides: external module maps with src are not supported`
+            `module-federation-overrides: external module maps with src are not supported`
         );
     }
 
@@ -231,7 +231,7 @@ const init = () => {
             JSON.parse(referenceNode.textContent || '[]');
         } catch (e) {
             throw Error(
-                `Invalid <script type="overridable-importmap"> - text content must be json`
+                `Invalid <script type="overridable-modulemap"> - text content must be json`
             );
         }
     }

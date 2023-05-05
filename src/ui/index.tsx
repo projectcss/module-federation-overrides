@@ -3,7 +3,7 @@ import FullUi from './components/FullUiComponent';
 
 if (window.customElements) {
     window.customElements.define(
-        "module-map-overrides-full",
+        "module-federation-overrides-full",
         preactCustomElement(FullUi, ["show-when-local-storage"])
     );
 }

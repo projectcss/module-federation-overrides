@@ -17,9 +17,9 @@ const FullUi = () => {
         const updateFn = () => {
             forceUpdate();
         }
-        window.addEventListener("module-map-overrides:change", updateFn);
+        window.addEventListener("module-federation-overrides:change", updateFn);
         return () => {
-            window.removeEventListener("module-map-overrides:change", updateFn)
+            window.removeEventListener("module-federation-overrides:change", updateFn)
         };
     }, [])
     return (
