@@ -218,8 +218,10 @@ const init = () => {
     const importMaps = Array.from(document.querySelectorAll(
         `script[type="${moduleMapType}"]`
     )) as unknown as HTMLScriptElement[];
+    debugger;
     referenceNode = importMaps ? importMaps[importMaps.length - 1]! : undefined;
-
+    console.log("importMaps: ", importMaps);
+    console.log("referenceNode1: ", referenceNode);
     if (referenceNode && referenceNode.src) {
         throw Error(
             `module-federation-overrides: external module maps with src are not supported`

@@ -1,6 +1,6 @@
 {
   "name": "module-federation-overrides",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,14 @@
   "files": [
     "dist"
   ],
+  "author": {
+    "name": "prjectcss",
+    "url": "https://github.com/projectcss/module-federation-overrides"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/projectcss/module-federation-overrides"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/eslint-parser": "^7.11.4",
@@ -53,6 +61,5 @@
     "acorn": "^8.0.0"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC"
 }
